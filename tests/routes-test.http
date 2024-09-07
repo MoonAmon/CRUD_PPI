@@ -1,0 +1,46 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=WebStorm
+
+###
+
+### POST request for adding pacientes
+POST http://localhost:3000/pacientes/add
+Content-Type: application/json
+INSERT INTO paciente (cpf, nomeCompleto, idade, diaMarcado, horaMarcada) VALUES
+(123456789, 'Harry Potter', 17, '2023-10-01', '10:00:00'),
+(987654321, 'Hermione Granger', 17, '2023-10-02', '11:00:00'),
+(456789123, 'Ron Weasley', 17, '2023-10-03', '12:00:00'),
+(789123456, 'Albus Dumbledore', 115, '2023-10-04', '13:00:00');
+{
+  "pacientes": [
+    {
+      "cpf": 123456789,
+      "nomeCompleto": "Harry Potter",
+      "idade": 17,
+      "diaMarcado": "2023-10-01",
+      "horaMarcada": "10:00:00"
+    },
+    {
+      "cpf": 987654321,
+      "nomeCompleto": "Hermione Granger",
+      "idade": 17,
+      "diaMarcado": "2023-10-02",
+      "horaMarcada": "11:00:00"
+    },
+    {
+      "cpf": 456789123,
+      "nomeCompleto": "Ron Weasley",
+      "idade": 17,
+      "diaMarcado": "2023-10-03",
+      "horaMarcada": "12:00:00"
+    },
+    {
+      "cpf": 789123456,
+      "nomeCompleto": "Albus Dumbledore",
+      "idade": 115,
+      "diaMarcado": "2023-10-04",
+      "horaMarcada": "13:00:00"
+    }
+  ]
+}

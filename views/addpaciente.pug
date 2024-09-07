@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  img(src='/images/banner-final.png' alt='Banner' style='width: 100%; height: 100%;')
+  h1= 'Adicionar Paciente'
+  form(method='POST' action='/pacientes/add' id='addPacienteForm')
+    div.form-group
+      label(for='nomeCompleto') Nome Completo
+      input.form-control(type='text' name='nomeCompleto' id='nomeCompleto')
+    div.form-group
+      label(for='cpf') CPF
+      input.form-control(type='text' name='cpf' id='cpf')
+    div.form-group
+      label(for='idade') Idade
+      input.form-control(type='number' name='idade' id='idade')
+    div.form-group
+      label(for='diaMarcado') Dia da Consulta
+      input.form-control(type='date' name='diaMarcado' id='diaMarcado')
+    div.form-group
+      label(for='horaMarcada') Hora da Consulta
+      input.form-control(type='time' name='horaMarcada' id='horaMarcada')
+    button.btn.btn-primary(type='submit') Adicionar
+
+block scripts
+  script(src='/javascripts/add-script.js')
